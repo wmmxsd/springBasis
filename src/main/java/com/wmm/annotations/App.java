@@ -1,13 +1,14 @@
 package com.wmm.annotations;
 
 import com.wmm.annotations.custom.Test;
+import com.wmm.annotations.custom.World;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
 /**
  * @author wangmingming160328
- * @Description
+ * @Description 注解实现切面
  * @date @2020/1/16 16:04
  */
 public class App {
@@ -22,5 +23,13 @@ public class App {
             System.out.println(test.result());
             System.out.println(Arrays.toString(test.method()));
         }
+
+        Method testMethod = clzss.getMethod("testWorldAnnotation");
+        if (testMethod.isAnnotationPresent(World.class)) {
+            World world = testMethod.getAnnotation(World.class);
+            System.out.println(world);
+            System.out.println(world.value());
+        }
+
     }
 }
