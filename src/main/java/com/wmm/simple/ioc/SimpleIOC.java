@@ -43,7 +43,7 @@ public class SimpleIOC {
                 String className = ele.getAttribute("class");
 
                 // 加载 beanClass
-                Class beanClass = null;
+                Class beanClass;
                 try {
                     beanClass = Class.forName(className);
                 } catch (ClassNotFoundException e) {

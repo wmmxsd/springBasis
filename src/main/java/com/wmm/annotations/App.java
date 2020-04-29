@@ -2,7 +2,9 @@ package com.wmm.annotations;
 
 import com.wmm.annotations.custom.Test;
 import com.wmm.annotations.custom.World;
+import com.wmm.annotations.javaclass.AnnotationTest;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
@@ -12,7 +14,7 @@ import java.util.Arrays;
  * @date @2020/1/16 16:04
  */
 public class App {
-    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException {
+    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         //获取AnnotationTest的Class对象
         Class clzss = Class.forName("com.wmm.annotations.javaclass.AnnotationTest");
         Method method = clzss.getMethod("test");
@@ -22,6 +24,7 @@ public class App {
             System.out.println(test.name());
             System.out.println(test.result());
             System.out.println(Arrays.toString(test.method()));
+            method.invoke(new AnnotationTest());
         }
 
         Method testMethod = clzss.getMethod("testWorldAnnotation");
