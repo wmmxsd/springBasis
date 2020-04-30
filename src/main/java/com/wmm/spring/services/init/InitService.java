@@ -1,4 +1,6 @@
-package com.wmm.springDemo.services.init;
+package com.wmm.spring.services.init;
+
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -8,6 +10,7 @@ import javax.annotation.PreDestroy;
  * @Description
  * @date @2020/1/17 10:50
  */
+@Component
 public class InitService {
     @PostConstruct
     public void initPostConstruct(){

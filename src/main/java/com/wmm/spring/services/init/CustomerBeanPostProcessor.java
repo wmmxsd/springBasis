@@ -1,4 +1,4 @@
-package com.wmm.springDemo.services.init;
+package com.wmm.spring.services.init;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;

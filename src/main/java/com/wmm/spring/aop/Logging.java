@@ -1,10 +1,13 @@
-package com.wmm.springDemo.aop;
+package com.wmm.spring.aop;
 
 import org.aspectj.lang.annotation.*;
 
+/**
+ * @author wangmingming
+ */
 @Aspect
 public class Logging {
-    @Pointcut("execution(* com.wmm.springDemo.beans.Device.getDeviceOnlyId(..))")
+    @Pointcut("execution(* com.wmm.spring.beans.Device.getDeviceOnlyId(..))")
     public void selectAll(){
         System.out.println("now");
     }

@@ -1,9 +1,8 @@
-package com.wmm.springDemo.app;
+package com.wmm.spring.app;
 
-import com.wmm.springDemo.beans.*;
+import com.wmm.spring.beans.*;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class MainApp {
     public static void main(String[] args) {
@@ -39,5 +38,6 @@ public class MainApp {
         /*ApplicationContext applicationContext1 = new FileSystemXmlApplicationContext("/target/classes/applicationContext.xml");
         HelloWorld helloWorld1 = (HelloWorld) applicationContext1.getBean("helloworld");
         helloWorld1.getMessage();*/
+        device = null;
     }
 }

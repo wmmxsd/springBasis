@@ -1,6 +1,6 @@
-package com.wmm.springDemo.services.init.initImpl;
+package com.wmm.spring.services.init.initImpl;
 
-import com.wmm.springDemo.services.init.WebAppStartUpLoader;
+import com.wmm.spring.services.init.WebAppStartUpLoader;
 import org.springframework.stereotype.Component;
 
 @Component

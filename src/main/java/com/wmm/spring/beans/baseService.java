@@ -1,4 +1,4 @@
-package com.wmm.springDemo.beans;
+package com.wmm.spring.beans;
 
 public abstract class baseService {
     private String serviceID;
