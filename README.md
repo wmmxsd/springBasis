@@ -1,6 +1,6 @@
 #spring基础
 
-**本repository主要含有spring的基础概念（IOC和AOP）、概念的简单实现、spring各模块的使用及源码分析**
+**本repository主要含有spring的基础概念（IOC和AOP）、概念的简单实现、bean的生命周期以及spring各模块的使用及源码分析**
 
 ## 基础概念
 + IOC
@@ -15,4 +15,12 @@
 	+cglib简单实现
 * IOC简单实现
 * AOP简单实现
+## bean的生命周期
+ * BeanFactoryPostProcessor
+ * InstantiationAwareBeanPostProcessor
+ * BeanPostProcessor
+ * InitializingBean
+ * DiposibleBean
+ * init-method
+ * destroy-method
 ## spring各模块使用
